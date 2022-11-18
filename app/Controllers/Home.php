@@ -31,20 +31,20 @@ class Home extends BaseController
         echo view('welcome_message');
         echo view('partial/footer');
     }
-    public function coba()
+    public function gugatan()
     {
 
         $kecamatan = $this->kecamatanModel->findAll();
 
         $data = [
-            'title' => 'Dashboard',
+            'title' => 'Dashboard | Gugatan',
             'kecamatan' => $kecamatan
         ];
 
 
 
         echo view('partial/header', $data);
-        echo view('coba');
+        echo view('v-gugatan');
         echo view('partial/footer');
     }
     public function action()

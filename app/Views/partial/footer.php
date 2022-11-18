@@ -13,11 +13,11 @@
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="<?= base_url('assets/plugins/jquery/jquery.min.js') ?>"></script>
+<script src="<?= base_url('public/assets/plugins/jquery/jquery.min.js') ?>"></script>
 <!-- Bootstrap 4 -->
-<script src=" <?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<script src=" <?= base_url('public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
-<script src="<?= base_url('assets/dist/js/adminlte.min.js') ?>"></script>
+<script src="<?= base_url('public/assets/dist/js/adminlte.min.js') ?>"></script>
 
 
 <script>
@@ -29,8 +29,8 @@
 
         if (selectedValue3 === "1") {
             selectedValue2 = document.getElementById("desa2").value;
-        } else if (selectedValue3 === "2") {
-            selectedValue2 = document.getElementById("select22").value;
+        } else {
+            selectedValue2 = document.getElementById("select2").value;
         }
 
         console.log(selectedValue);
@@ -134,7 +134,7 @@
             }
         });
 
-        $('#form2').hide();
+        // $('#form2').hide();
         $('#kec2').hide();
         $('#ds2').hide();
 
@@ -142,13 +142,13 @@
             if ($(this).val() == '1') {
                 $('#kec2').show();
                 $('#ds2').show();
-                $('#form2').hide();
+                // $('#form2').hide();
             } else if ($(this).val() == '0') {
-                $('#form2').hide();
+                // $('#form2').hide();
                 $('#kec2').hide();
                 $('#ds2').hide();
             } else {
-                $('#form2').show();
+                // $('#form2').show();
                 $('#kec2').hide();
                 $('#ds2').hide();
             }
